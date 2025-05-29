@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --roxo: #9b5de5ff;
+    --rosa-brilhante: #f15bb5ff;
+    --amarelo: #fee440ff;
+    --azul-claro: #00bbf9ff;
+    --verde-claro: #00f5d4ff;
+    --preto: #000000;
+    --fonte-primaria: "Quicksand", sans-serif;
+    --fonte-secundaria: "Martian Mono", monospace;
+}

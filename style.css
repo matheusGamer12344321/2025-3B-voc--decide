@@ -16,3 +16,28 @@
     --fonte-primaria: "Quicksand", sans-serif;
     --fonte-secundaria: "Martian Mono", monospace;
 }
+
+body{
+    background-color: var(--rosa-brilhante);
+    color: var(--preto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: var(--fonte-primaria);
+}
+
+.caixa-principal{
+    background-color: var(--azul-claro);
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+
+}
+.titulo{
+    font-family: var(--fonte-secundaria);
+    
+}
+
+
+

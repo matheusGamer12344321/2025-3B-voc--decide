@@ -8,14 +8,14 @@ const perguntas = [
     {
         enunciado: "Pergunta 1",
         alternativas: [
-           {
-            texto: "alternativa 01",
-            afirmacao: "resultado 01"
-           },
-           {
-            texto: "alternativa 02",
-            afirmacao: "resultado 02"
-           }
+            {
+                texto: "alternativa 01",
+                afirmacao: "resultado 01"
+            },
+            {
+                texto: "alternativa 02",
+                afirmacao: "resultado 02"
+            }
 
         ]
     },
@@ -25,11 +25,11 @@ const perguntas = [
             {
                 texto: "alternativa 03",
                 afirmacao: "resultado 03"
-               },
-               {
+            },
+            {
                 texto: "alternativa 04",
                 afirmacao: "resultado 04"
-               }
+            }
 
         ]
     }, {
@@ -38,11 +38,11 @@ const perguntas = [
             {
                 texto: "alternativa 05",
                 afirmacao: "resultado 05"
-               },
-               {
+            },
+            {
                 texto: "alternativa 06",
                 afirmacao: "resultado 06"
-               }
+            }
 
         ]
     }, {
@@ -51,11 +51,11 @@ const perguntas = [
             {
                 texto: "alternativa 07",
                 afirmacao: "resultado 07"
-               },
-               {
+            },
+            {
                 texto: "alternativa 08",
                 afirmacao: "resultado 08"
-               }
+            }
 
         ]
     }
@@ -67,6 +67,10 @@ let historiaFinal = " ";
 
 
 function mostraPergunta() {
+    if (atual >= perguntas.lenght) {
+        mostreResultado();
+        return;
+    }
     perguntaAtual = perguntas[atual]
     caixaPerguntas.textContent = perguntaAtual.enunciado
     mostraAlternativas()
@@ -82,7 +86,7 @@ function mostraAlternativas() {
     }
 }
 
-function respostaSelecionada(opcaoSelecionada){
+function respostaSelecionada(opcaoSelecionada) {
     atual++
     mostraPergunta();
 }
